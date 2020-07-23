@@ -1,0 +1,83 @@
+
+.wild-wrapper {
+    opacity: 0;
+    transition: opacity 3s linear;
+    position: absolute;
+    bottom: 15%;
+    left: 1%;
+    color: #fff9f6;
+    animation:bounce 1s;
+}
+
+@keyframes bounce {
+    to { left: 1%; }
+    from   { left: -500px; /* 200px - 20px */ }
+}
+
+.visible {
+    opacity: 1;
+}
+
+.wild-pokemon {
+
+    display: flex;
+    width: 65%;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.wild-pokemon-image-container {
+    width: 20%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    position: relative;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.wild-pokemon-image-container img {
+    width: 80%;
+    text-align: center;
+}
+
+.wild-pokemon-info {
+    width: 80%;
+    margin-left: 5%;
+    padding: 0;
+    display: flex;
+}
+
+.wild-pokemon-info-content {
+    width: 66%;
+}
+
+.wild-pokemon-info-actions {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 5px;
+}
+
+.wild-pokemon-info-action-button {
+    margin: 5px;
+    width: 100%;
+    font-size: 11px;
+}
+
+.wild-pokemon-name {
+    margin: 0;
+}
+
+.wild-pokemon-stats {
+    width: 100%;
+}
+
+.wild-pokemon-stat {
+    display: inline-block;
+    width: 33%;
+    font-size: 11px;
+    padding: 0;
+    margin: 0;
+
+}
